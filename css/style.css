@@ -1,0 +1,382 @@
+
+/* ==============================
+    All Common css start
+============================== */
+:root{
+    --theme_color: #FD620B;
+    --black: #222222;
+    --white: #ffffff;
+    --montserrat: 'Montserrat', sans-serif;
+    --clip-button: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(213, 213, 213, 0.71);
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+input,button{
+    border:none;
+    background: transparent;
+}
+input:hover,button:hover{
+    border:none;
+    box-shadow: none;
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+/* font-family: 'Montserrat', sans-serif; */
+/* ==============================
+    All Common css end
+============================== */
+
+/* ==============================
+    Navbar part start
+============================== */
+#navbar{
+    padding: 25px 0;
+    background: #FCFCFC;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.18);
+}
+.navbar-nav{}
+.navbar-nav li{
+    margin: 0 15px;
+}
+.navbar-nav li a{
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+}
+.nav_search{
+    display: flex;
+    padding: 8px 20px;
+    border: 1px solid var(--theme_color);
+}
+.nav_search input{
+    border: none;
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B6B6B6;
+}
+.nav_search button{
+    border: none;
+    background: transparent;
+    color: var(--theme_color);
+}
+/* ==============================
+    Navbar part End
+============================== */
+
+
+
+
+/* ==============================
+    Banner part start
+============================== */
+  #banner{
+    padding-top: 110px;
+    padding-bottom: 160px;
+    background: url(../images/banner-bg.jpg) no-repeat center/cover;
+  }
+    .banner_item .image{
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .banner_item .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .banner_item .button{
+    text-align: center
+  }
+  .banner_item .button button {
+    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+    background: var(--theme_color);
+    text-align: center;
+    padding: 17px 25px;
+    font-family: var(--montserrat);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+/* ==============================
+    Banner part End
+============================== */
+
+
+
+
+/* ==============================
+    newsletter part start
+============================== */
+#newsletter_section{
+    padding: 60px 0;
+}
+.newsletter{
+    padding: 10px;
+    background: var(--theme_color);
+}
+.newsletter .inner_box{
+    background: #B6B6B6;
+    padding: 23px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.newsletter .inner_box .text p{
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);    
+}
+.newsletter .inner_box .input_box #name{
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;  
+    color: var(--black);  
+    padding: 8px;
+    background: var(--white);
+    border: 1px solid var(--theme_color); 
+}
+.newsletter .inner_box .input_box #name::placeholder{
+    color: #717171;  
+}
+
+.newsletter .inner_box .input_box #email{
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;  
+    color: #000000;  
+    padding: 8px;
+    background: var(--white);
+    border: 1px solid var(--theme_color); 
+}
+.newsletter .inner_box .input_box #email::placeholder{
+    color: #717171;  
+}
+
+.newsletter .inner_box .input_box form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+.newsletter .inner_box .input_box button{
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;  
+    color: var(--white);
+    background: var(--theme_color);
+    padding: 12px 25px;
+    clip-path: var(--clip-button);
+}
+/* ==============================
+    newsletter part End
+============================== */
+
+
+
+
+/* ==============================
+    Post part start
+============================== */
+.single_post{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: linear-gradient(107.77deg, #D0D0D0 0%, rgba(35, 39, 43, 0) 100%);
+    box-shadow: 6px 10px 19px 3px rgba(30, 32, 36, 0.3);
+    border-radius: 16px;
+    padding: 23px 25px;
+    margin-bottom: 24px;
+}
+.single_post .image{
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    overflow: hidden;
+}
+.single_post .text{
+
+}
+.single_post .text .comment{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.single_post .text .comment span{
+    color: var(--white);
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+.single_post .text .comment .line{
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background: var(--theme_color);
+}
+.single_post .text h3{
+    color:var(--white);
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 22px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.single_post .text h3::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--theme_color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.single_post .text p{
+    color:var(--white);
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 19px;
+    padding-bottom: 17px;
+}
+.single_post .text a{
+    color:var(--theme_color);
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+.single_post .text a::after{
+    content: "\f061";
+    font-family: "Font Awesome 6 free";
+    margin-left: 20px;
+    padding-top: 3px;
+}
+
+.sidebar{
+    padding: 40px;
+    background: linear-gradient(107.77deg, #D0D0D0 0%, rgba(35, 39, 43, 0) 100%);
+    box-shadow: 6px 10px 19px 3px rgba(30, 32, 36, 0.3);
+    border-radius: 16px;
+    /* height: calc(100% - 24px); */
+    position: sticky;
+    top: 0;
+}
+.sidebar h2{
+    font-family: var(--montserrat);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.sidebar h2::after{
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: var(--theme_color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar_item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+.sidebar_item .image{
+    width: 65px;
+    height: 65px;
+    border: 1px solid var(--white);
+    overflow: hidden;
+}
+.sidebar_item .text h3{
+    font-family: var(--montserrat);
+    color: var(--theme_color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 8px;
+    position: relative;
+}
+.sidebar_item .text h3::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--white);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar_item .text p{
+    font-family: var(--montserrat);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 6px;
+}
+/* ==============================
+    Post part End
+============================== */
+
+
+
+/* ==============================
+    Footer part start
+============================== */
+#footer{
+    padding-top: 60px;
+}
+.social_media{
+    background: var(--theme_color);
+}
+.copyright{
+    background: #d0d0d0;
+}
+/* ==============================
+    Footer part End
+============================== */
+
+
+
+
